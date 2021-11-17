@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+        crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+        rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <h1> Is your tumor malignant? </h1>
+    <p>The information below is obtained through the following procedure: "Features are computed from a digitized image of a fine needle
+	aspirate (FNA) of a breast mass."</p>
+    <div class="container">
+        <form action="/test" method="POST">
+            <table class="table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Mean</th>
+                    <th>Standard Error</th>
+                    <th>Worst Values</th>
+                </tr>
+                <tr>
+                    <th>Radius</th>
+                    <td><input type="text" name="a1"></td>
+                    <td><input type="text" name="a2"></td>
+                    <td><input type="text" name="a3"></td>
+                </tr>
+                <tr>
+                    <th>Texture</th>
+                    <td><input type="text" name="b1"></td>
+                    <td><input type="text" name="b2"></td>
+                    <td><input type="text" name="b3"></td>
+                </tr>
+                <tr>
+                    <th>Perimeter</th>
+                    <td><input type="text" name="c1"></td>
+                    <td><input type="text" name="c2"></td>
+                    <td><input type="text" name="c3"></td>
+                </tr>
+                <tr>
+                    <th>Area</th>
+                    <td><input type="text" name="d1"></td>
+                    <td><input type="text" name="d2"></td>
+                    <td><input type="text" name="d3"></td>
+                </tr>
+                <tr>
+                    <th>Smoothness</th>
+                    <td><input type="text" name="e1"></td>
+                    <td><input type="text" name="e2"></td>
+                    <td><input type="text" name="e3"></td>
+                </tr>
+                <tr>
+                    <th>Compactness</th>
+                    <td><input type="text" name="f1"></td>
+                    <td><input type="text" name="f2"></td>
+                    <td><input type="text" name="f3"></td>
+                </tr>
+                <tr>
+                    <th>Concavity</th>
+                    <td><input type="text" name="g1"></td>
+                    <td><input type="text" name="g2"></td>
+                    <td><input type="text" name="g3"></td>
+                </tr>
+                <tr>
+                    <th>Concave Points</th>
+                    <td><input type="text" name="h1"></td>
+                    <td><input type="text" name="h2"></td>
+                    <td><input type="text" name="h3"></td>
+                </tr>
+                <tr>
+                    <th>Symmetry</th>
+                    <td><input type="text" name="i1"></td>
+                    <td><input type="text" name="i2"></td>
+                    <td><input type="text" name="i3"></td>
+                </tr>
+                <tr>
+                    <th>Fractal Dimension</th>
+                    <td><input type="text" name="j1"></td>
+                    <td><input type="text" name="j2"></td>
+                    <td><input type="text" name="j3"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Evaluate">
+        </form>
+    </div>
+    <div class = "container">
+        <form action="/test2" method="POST">
+            <div class="form-group">
+                <label for="csv">Shortcut:</label>
+                <input type="text" name="csv">
+            </div>
+            <input type="submit" value="Evaluate">
+        </form>
+    </div>
+</body>
+</html>
